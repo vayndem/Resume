@@ -16,7 +16,7 @@ const HandleLinkedin = () => {
       <p class="font-bold">Keep In Touch</p>
     </aside>
     <nav
-      class="grid-flow-col gap-4 md:place-self-center md:justify-self-end sm:justify-center sm:place-self-center sm:gap-9"
+      class="grid-flow-col gap-4 md:place-self-center md:justify-self-end sm:justify-self-center sm:place-self-center sm:gap-9"
     >
       <a @click="HandleInstagram">
         <i class="fa-brands fa-instagram zoom text-2xl hover:scale-125 ease-in duration-150"></i>

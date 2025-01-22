@@ -51,7 +51,7 @@ const humanity = [
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
     <!-- Experiences Section -->
-    <div class="rounded-lg shadow-lg space-y-6">
+    <div class="rounded-lg space-y-6">
       <h1 class="flex flex-wrap text-2xl font-bold space-x-2 px-6">
         <span>My</span>
         <span class="text-primary">Experience</span>
@@ -84,7 +84,7 @@ const humanity = [
     </div>
 
     <!-- Humanity Section -->
-    <div class="rounded-lg shadow-lg space-y-6">
+    <div class="rounded-lg space-y-6">
       <h1 class="flex flex-wrap text-2xl font-bold space-x-2 px-6">
         <span>My</span>
         <span class="text-primary">Organization</span>

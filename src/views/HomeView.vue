@@ -6,7 +6,10 @@ import Experience from '../components/Experience.vue'
 import heroImage from '/DSCF3145.JPG'
 
 const handleClick = () => {
-  window.open('https://www.google.com', '_blank')
+  window.open(
+    'https://drive.google.com/file/d/1LXzt8EJg4Q6e-_ix_q6IDAXQ-0nArTzD/view?usp=sharing',
+    '_blank',
+  )
 }
 </script>
 
@@ -27,7 +30,7 @@ const handleClick = () => {
               scalable web applications to enhance functionality and user experience. I possess
               strong collaboration and communication skills, able to work effectively within a team.
             </p>
-            <button class="btn btn-primary bg-primary" @click="handleClick">
+            <button class="btn btn-primary bg-primary hover:btn-accent" @click="handleClick">
               <i class="fas fa-briefcase"></i> CV Here
             </button>
           </div>
@@ -35,11 +38,12 @@ const handleClick = () => {
       </div>
     </div>
 
-    <h1 class="flex text-3xl font-bold justify-center space-x-2">
+    <h1 class="flex flex-wrap text-3xl font-bold justify-center space-x-2">
       <span>I Use This</span>
       <span class="text-primary">Tech Stack</span>
       <span>For My Development</span>
     </h1>
+
     <!-- Carousel + Card -->
     <div class="flex justify-center py-12">
       <Carousel />
