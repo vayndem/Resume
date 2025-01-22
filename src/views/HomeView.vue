@@ -1,8 +1,9 @@
 <script setup>
 import Footer from '../components/Footer.vue'
 import Carousel from '../components/Carousel_Card.vue'
-import dashboard from '../components/Dashboard.vue'
+import Dashboard from '../components/Dashboard.vue'
 import Experience from '../components/Experience.vue'
+import heroImage from '/DSCF3145.JPG'
 
 const handleClick = () => {
   window.open('https://www.google.com', '_blank')
@@ -16,7 +17,7 @@ const handleClick = () => {
     <div class="flex">
       <div class="hero py-16">
         <div class="hero-content flex-col lg:flex-row">
-          <img src="../assets/DSCF3145.JPG" class="max-w-72 rounded-lg shadow-2xl" />
+          <img :src="heroImage" alt="Hero Image of Haikal" class="max-w-72 rounded-lg shadow-2xl" />
           <div>
             <h1 class="text-5xl font-bold">Greetings!! Haikal Here</h1>
             <p class="py-6">
@@ -27,7 +28,7 @@ const handleClick = () => {
               strong collaboration and communication skills, able to work effectively within a team.
             </p>
             <button class="btn btn-primary bg-primary" @click="handleClick">
-              <a class="fas fa-briefcase"></a>CV Here
+              <i class="fas fa-briefcase"></i> CV Here
             </button>
           </div>
         </div>
