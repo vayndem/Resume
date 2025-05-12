@@ -10,6 +10,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 // Import Font Awesome Vue Component
+// eslint-disable-next-line no-unused-vars
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 // Add Icons to the Library

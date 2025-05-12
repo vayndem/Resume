@@ -1,5 +1,23 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
+import { ref, onMounted, nextTick } from 'vue'
+import { useElementVisibility } from '@vueuse/core'
+
+const experienceRefs = ref([])
+const humanityRefs = ref([])
+const experienceVisibility = ref([])
+const humanityVisibility = ref([])
+
+onMounted(async () => {
+  await nextTick()
+  experienceRefs.value.forEach((el, i) => {
+    experienceVisibility.value[i] = useElementVisibility(el)
+  })
+  humanityRefs.value.forEach((el, i) => {
+    humanityVisibility.value[i] = useElementVisibility(el)
+  })
+})
+
 const experiences = [
   {
     id: 1,
@@ -10,16 +28,16 @@ const experiences = [
   },
   {
     id: 2,
-    title: 'Program Prigel DATAINS x AI Squad UNNES Batch 2',
+    title: 'Prigel DATAINS x AI Squad UNNES Batch 2',
     period: 'Aug 2023 - Jan 2024',
-    competency: 'NLP Engginering, Database, and Flask',
+    competency: 'NLP Engineering, Database, and Flask',
     skills: ['MongoDB', 'Flask', 'Wiring API'],
   },
   {
     id: 3,
-    title: 'Program Prigel DATAINS x AI Squad UNNES Batch 1',
+    title: 'Prigel DATAINS x AI Squad UNNES Batch 1',
     period: 'Feb 2023 - July 2023',
-    competency: 'Computer Vision Engginering, Github, And HTML and CSS',
+    competency: 'Computer Vision Engineering, Github, And HTML and CSS',
     skills: ['Github', 'HTML & CSS', 'YoloV5 Engine'],
   },
 ]
