@@ -1,15 +1,19 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 
 <script setup>
-const handleClick = () => {
+const handleClick1 = () => {
   window.open('https://sistem-soal-nusaputera.web.app', '_blank')
+}
+
+const handleClick2 = () => {
+  window.open('https://quran-searcher.streamlit.app', '_blank')
 }
 </script>
 
 <template>
   <div class="card bg-base-100 image-full w-max h-64 shadow-sm">
     <figure>
-      <img src="/image.png " alt="Website Screenshot" class="opacity-45" />
+      <img src="/image2.png " alt="Website Screenshot" class="opacity-45" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">Essay Question Generator</h2>
@@ -20,7 +24,27 @@ const handleClick = () => {
       </p>
 
       <div class="card-actions mt-auto justify-end">
-        <button class="btn btn-primary bg-primary hover:btn-accent" @click="handleClick">
+        <button class="btn btn-primary bg-primary hover:btn-accent" @click="handleClick1">
+          <i class="fa-solid fa-globe"></i> Visit
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-base-100 image-full w-max h-64 shadow-sm">
+    <figure>
+      <img src="/image.png " alt="Website Screenshot" class="opacity-45" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">quran Verse Searcher</h2>
+      <h2 class="card-title">Using Gemini</h2>
+      <p class="text-sm">
+        Website pencari ayat quran yang relevan<br />
+        Menggunakan AI Secara Otomatis
+      </p>
+
+      <div class="card-actions mt-auto justify-end">
+        <button class="btn btn-primary bg-primary hover:btn-accent" @click="handleClick2">
           <i class="fa-solid fa-globe"></i> Visit
         </button>
       </div>
