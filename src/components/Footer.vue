@@ -8,6 +8,9 @@ const HandleInstagram = () => {
 const HandleLinkedin = () => {
   window.open('https://www.linkedin.com/in/haikal-abror', '_blank')
 }
+const HandleGithub = () => {
+  window.open('https://github.com/vayndem', '_blank')
+}
 </script>
 <template>
   <footer class="footer bg-neutral text-neutral-content items-center p-4">
@@ -23,6 +26,9 @@ const HandleLinkedin = () => {
       </a>
       <a @click="HandleLinkedin">
         <i class="fa-brands fa-linkedin zoom text-2xl hover:scale-125 ease-in duration-150"></i>
+      </a>
+      <a @click="HandleGithub">
+        <i class="fa-brands fa-github zoom text-2xl hover:scale-125 ease-in duration-150"></i>
       </a>
     </nav>
   </footer>
